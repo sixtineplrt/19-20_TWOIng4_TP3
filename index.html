@@ -19,8 +19,9 @@
     ></script>
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
   </head>
-  <body>
+  <body onload="javascript:start();">
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
     >
@@ -57,9 +58,6 @@
                 <div id="icon-weather-container" ></div>
                 <h3 id="today-forecast-temp"> </h3>
               </div>
-              <button type="button" class="btn btn-lg btn-block btn-primary button-load-forecast" onclick='start()'>
-                Quel temps fait'il aujourd'hui ?
-              </button>
             </div>
           </div>
         </div>
