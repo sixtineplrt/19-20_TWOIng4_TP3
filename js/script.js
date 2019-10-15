@@ -28,6 +28,7 @@ function start(city) {
     .catch(function(error) {
       // Affiche une erreur
       console.error(error);
+      alert("Ville introuvable !");
     });
 }
 
@@ -36,6 +37,7 @@ function searchCity() {
 
   //Récupérer la valeur de l'input
   const ville = document.getElementById('city-input').value;
-  //rappeler la fonction de base avec la nouvelle valeur de la ville
-  start(ville);
+
+  // Vérifier que l'input n'est pas vide
+  ville === "" ? alert("Veuillez indiquer une ville !") : start(ville);
 }
