@@ -34,7 +34,7 @@ class API_WEATHER{
       crossdomain: true
     })*/
     return axios
-    .get(`${API_URLBis}?q=${this.city}&units=metric&appid=${API_KEY}&cnt=4`, {
+    .get(`${API_URLBis}?q=${this.city}&units=metric&cnt=4&appid=${API_KEY}`, {
       crossdomain: true
     })
   }

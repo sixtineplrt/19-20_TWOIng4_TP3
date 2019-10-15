@@ -20,15 +20,13 @@ function start(city) {
         const main = data[i].weather[0].main;
         const description = data[i].weather[0].description;
         const icon = apiWeather.getHTMLElementFromIcon(data[i].weather[0].icon);
-        /*alert("ok");
-        const temp = data[i].main.temp;
-        alert("ok+++");*/
+        const temp = data[i].temp.day;
 
         // Modifier le DOM
         document.getElementById('day'+i+'-forecast-main').innerHTML = main;
         document.getElementById('day'+i+'-forecast-more-info').innerHTML = description;
         document.getElementById('icon'+i+'-weather-container').innerHTML = icon;
-        /*document.getElementById('day'+i+'-forecast-temp').innerHTML = `${temp}°C`;*/
+        document.getElementById('day'+i+'-forecast-temp').innerHTML = `${temp}°C`;
       }
       
     })
